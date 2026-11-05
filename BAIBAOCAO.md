@@ -23,7 +23,7 @@ Làm việc tại không gian mở như quán cafe tiềm ẩn 3 nhóm rủi ro 
 * **Khai báo `.gitignore` chặt chẽ:** Đảm bảo tệp `.gitignore` luôn chứa các cấu hình nhạy cảm (`.env`, `*.pem`, `id_rsa`) trước khi thực hiện lệnh `git add` lần đầu tiên.
 * **Tích hợp Pre-commit Hooks tự động:** Cài đặt các công cụ quét mã nguồn như **TruffleHog** hoặc **git-secrets**. Cấu hình này sẽ chặn đứng lệnh `git commit` nếu phát hiện các chuỗi văn bản có định dạng khớp với token, AWS keys hay mật khẩu.
 
-## **1. Phân tích bối cảnh & Nhận diện rủi ro (Môi trường quán Cafe)**
+**1. Phân tích bối cảnh & Nhận diện rủi ro (Môi trường quán Cafe)**
 Làm việc tại không gian công cộng tiềm ẩn 3 nhóm rủi ro an ninh mạng và an toàn thông tin cốt lõi:
 
 Nghe lén dữ liệu (Man-in-the-Middle/Packet Sniffing): Kẻ gian chung mạng Wi-Fi công cộng có thể đánh cắp cookie phiên đăng nhập, API keys hoặc dữ liệu không mã hóa.
@@ -32,7 +32,7 @@ Tấn công thị giác (Shoulder Surfing): Góc nhìn mở khiến màn hình d
 
 Tiếp cận vật lý trái phép: Nguy cơ mất cắp thiết bị hoặc bị cắm USB chứa mã độc khi rời khỏi bàn trong thời gian ngắn (đi vệ sinh, nghe điện thoại).
 
-2. Hướng dẫn triển khai các cấu hình bảo mật kỹ thuật
+**2. Hướng dẫn triển khai các cấu hình bảo mật kỹ thuật**
 
 2.1. Thiết lập Két sắt số Bitwarden với Master Password chuẩn quân sự
 
@@ -62,7 +62,7 @@ Thiết lập .gitignore chặt chẽ: Đảm bảo file .gitignore luôn chứa
 
 Quét Secrets tự động (Pre-commit Hook): Tích hợp các công cụ tự động quét mã nguồn như TruffleHog hoặc git-secrets vào Git Hooks. Cấu hình này sẽ tự động chặn lệnh git commit nếu phát hiện chuỗi text có định dạng giống mật khẩu, API token hay AWS keys.
 
-3. Các giải pháp an ninh vật lý & mạng bổ sung (Khuyến nghị)
+**3. Các giải pháp an ninh vật lý & mạng bổ sung (Khuyến nghị)**
 
 Luôn sử dụng VPN (Virtual Private Network): Bật VPN ngay khi kết nối vào Wi-Fi quán cafe để mã hóa toàn bộ luồng dữ liệu truy cập internet, chống lại các cuộc tấn công nghe lén nội mạng.
 
