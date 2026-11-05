@@ -1,0 +1,26 @@
+# Thông tin cấu hình môi trường và API Keys
+.env
+.env.local
+.env.development
+.env.production
+
+# Tệp tin chứng chỉ và khóa mã hóa
+*.pem
+*.key
+*.cert
+id_rsa
+id_rsa.pub
+
+# Thư mục chứa thư viện và dependencies
+node_modules/
+vendor/
+.venv/
+__pycache__/
+
+# Tệp tin log hệ thống
+*.log
+npm-debug.log*
+
+# Các tệp tin cấu hình của hệ điều hành
+.DS_Store
+Thumbs.db
